@@ -14,13 +14,12 @@ on:
 permissions:
   contents: read
   pages: write
-  pages: write
   id-token: write
 
 # Allow one concurrent deployment
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
